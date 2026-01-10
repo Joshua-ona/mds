@@ -1,0 +1,188 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #616060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Left side: logo + title */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+}
+
+
+.navbar-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.navbar-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #02050c; /* blue */
+}
+
+/* Right side: links */
+.nav-right {
+  display: block;
+  gap: 0px;
+}
+.nav-right.open {
+  display: flex;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 44px;
+  cursor: pointer;
+  color: #391296; /* orange */
+}
+.nav-right {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e78727; /* orange */
+  transition: color 0.3s ease;
+}
+
+/* Add space so content doesn't hide behind navbar */
+body {
+  padding-top: 70px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  
+}
+
+.logo {
+  height: 100px;
+  margin-right: 12px;
+}
+
+.nav-left h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #034d97;
+}
+
+
+.btn-plain {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.btn-plain {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Hover (optional) */
+.btn-plain:hover {
+  color: #003366;
+  opacity: 0.8;
+}
+
+/* Active (when clicked) */
+.btn-plain:active {
+  border: none;
+  color: orange;
+}
+
+/* Focus (keyboard users) */
+.btn-plain:focus {
+  outline: none;
+}
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-right.open {
+    position: absolute;
+    display: flex;
+    top: 70px;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    
+    box-shadow: none;
+    
+  }
+
+
+  .btn-plain {
+    font-size: 1rem;
+  }
+  .nav-left{
+    margin-left: -39px;
+  }
+
+  .nav-left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+

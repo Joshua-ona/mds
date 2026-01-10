@@ -1,0 +1,75 @@
+.lower-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* HERO */
+.lower-hero {
+  background: linear-gradient(to right, #1b4f9c, #f7941d);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.lower-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.lower-hero p {
+  font-size: 18px;
+}
+
+/* SECTIONS */
+.lower-section {
+  padding: 40px 60px;
+}
+
+.lower-section h2 {
+  color: #1b4f9c;
+  margin-bottom: 15px;
+}
+
+.lower-section p {
+  max-width: 900px;
+}
+
+/* LISTS */
+.values-list,
+.curriculum-list,
+.activities-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.values-list li,
+.curriculum-list li,
+.activities-list li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER NOTE */
+.lower-footer {
+  background: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #1b4f9c;
+}
+.img{
+  
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .lower-section {
+    padding: 30px 20px;
+  }
+
+  .lower-hero h1 {
+    font-size: 28px;
+  }
+}

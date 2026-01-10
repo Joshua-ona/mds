@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  padding-bottom: 90px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  
+  margin-right: 2px;
+}
+
+.nav-left h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003366;
+}
+
+.nav-right  {
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ff7a00;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #003366;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  margin-top: 70px;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-image: url(destiny.webp);
+  background-size: cover;
+background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: rgb(255, 253, 254);
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ================= CONTENT SECTIONS ================= */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section.light {
+  background-color: #f5f7fa;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.section ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.section ul li {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 15px 0;
+    opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer p {
+  font-size: 18px;
+  
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-left h1 {
+    font-size: 15px;
+  }
+
+  .nav-right a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
