@@ -1,6 +1,6 @@
 import React from "react";
 import "./Gallery.css";
-import image from "./images (5).jpg";
+import image from "./assets/images (5).jpg";
 
 
 
