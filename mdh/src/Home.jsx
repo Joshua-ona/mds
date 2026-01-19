@@ -4,7 +4,9 @@ import { useState } from 'react';
 
 function Home() {
 
-  const [page, setPage] =useState("high")
+  
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       {/* Header / Navbar */}
@@ -41,6 +43,31 @@ function Home() {
           <li>Qualified & Experienced Teachers</li>
           <li>Guidance and Counseling</li>
         </ul>
+      </section>
+      <section className='section'>
+        <h2>Admissions</h2>
+        <p>We are delighted to welcome parents 
+          and guardians to begin the admissions process with us.
+           Our 2026 intakes are going and we humbly welcome to take
+            admissions or you canpot for an online admission</p>
+          <p>Click the button to fill this online form</p>
+        <div style={{ textAlign: "center", marginTop: "40px" }}>
+      {!open && (
+        <p><button onClick={() => setOpen(true)}>
+          Fill Registration Form
+        </button>
+        </p>
+      )}
+
+      {open && (
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfpRTQzt42Z2P0eaEiXfk-3NRBwmwgBpPdK5bWJR9LBlXwvFw/viewform?usp=publish-editor"
+          height="850"
+          style={{ border: "none", marginTop: "20px" }}
+          title="Registration Form"
+        />
+      )}
+    </div>
       </section>
 
       
