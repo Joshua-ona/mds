@@ -60,10 +60,11 @@ body {
 .hero {
   margin-top: 70px;
   min-height: 80vh;
-  background-repeat: no-repeat;
-  background-image: url(destiny.webp);
+  background-image: url("/destiny.webp");
   background-size: cover;
-background-position: center;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,10 +160,7 @@ background-position: center;
   .hero h2 {
     font-size: 32px;
   }
-  .hero{
-      background-image: url(destiny.webp);
-      width: 100%;
-  }
+  
 
   .hero p {
     font-size: 16px;
