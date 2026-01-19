@@ -24,7 +24,7 @@ function Footer() {
       <p>P.O Box 35359 Kampala</p>
        
         <div style={{ padding: "0px", textAlign: "center", color: "orange" }}>
-          <p>Contact us</p>
+          <p>Connect to us</p>
         <div style={{ display: "flex", justifyContent: "center", gap: "20px", color:"orange"}}>
         
 

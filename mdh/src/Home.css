@@ -159,6 +159,10 @@ background-position: center;
   .hero h2 {
     font-size: 32px;
   }
+  .hero{
+      background-image: url(destiny.webp);
+      width: 100%;
+  }
 
   .hero p {
     font-size: 16px;

@@ -1,5 +1,8 @@
 import "./Lower.css";
-
+import img9 from "./assets/images-5.jpg";
+import img10 from "./assets/exercise.jpeg";
+import img11 from "./assets/download-1.jpg";
+import img12 from "./assets/images-2.jpg";
 function Lower() {
   return (
     <div className="lower-page">
@@ -32,13 +35,13 @@ function Lower() {
 
         <ul className="values-list">
           <li>Academic Excellence</li>
-          <img className='img' src="images (5).jpg" alt="praying"></img>
+          <img className='img' src={img9} alt="praying"></img>
           <li>Discipline and Integrity</li>
-          <img  className='img' src="exercise.jpeg" alt="praying"></img>
+          <img  className='img' src={img10} alt="praying"></img>
           <li>Moral and Spiritual Growth</li>
-          <img className='img' src="download (1).jpg" alt="praying"></img>
+          <img className='img' src={img11} alt="praying"></img>
           <li>Respect and Responsibility</li>
-          <img  className='img' src="images (2).jpg" alt="praying"></img>
+          <img  className='img' src={img12} alt="praying"></img>
         </ul>
       </section>
 
