@@ -15,10 +15,7 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <h2>WISDOM FROM HEAVEN</h2>
-        <p>
-          Providing holistic secondary education with academic excellence,
-          character formation, and innovation.
-        </p>
+       
       </section>
 
       {/* About Section */}

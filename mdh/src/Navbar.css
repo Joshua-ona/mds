@@ -63,7 +63,8 @@
   font-size: 16px;
   font-weight: 500;
   color: #e78727; /* orange */
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
+  
 }
 
 /* Add space so content doesn't hide behind navbar */
@@ -145,6 +146,7 @@ body {
 @media (max-width: 768px) {
   .toggle-btn {
     display: block;
+    margin-right: -39px;
   }
 
   .nav-right {
@@ -170,13 +172,14 @@ body {
 
   .btn-plain {
     font-size: 1rem;
+    
   }
   .nav-left{
     margin-left: -39px;
   }
 
   .nav-left h1 {
-    font-size: 1.5rem;
+    font-size: 12px;
   }
 }
 

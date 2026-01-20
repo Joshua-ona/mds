@@ -58,10 +58,11 @@ body {
 
 /* ================= HERO SECTION ================= */
 .hero {
-  margin-top: 70px;
+  margin-top: 50px;
   min-height: 80vh;
   background-image: url("/destiny.webp");
   background-size: cover;
+  
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -71,7 +72,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  color: rgb(255, 253, 254);
+  color: rgb(253, 252, 253);
 }
 
 .hero h2 {
@@ -159,7 +160,7 @@ button{
   }
 
   .nav-left h1 {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .nav-right a {
@@ -167,6 +168,17 @@ button{
     font-size: 14px;
   }
 
+  .hero{
+  
+    background-image: url("/destiny.webp");
+    min-height: 60vh;
+    padding-top: 5px;
+    margin-top: 10px;
+    width: 100%;
+    
+    background-size: contain;
+ 
+  }
   .hero h2 {
     font-size: 32px;
   }
