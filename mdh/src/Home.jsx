@@ -48,7 +48,7 @@ function Home() {
            Our 2026 intakes are going and we humbly welcome to take
             admissions or you canpot for an online admission</p>
           <p>Click the button to fill this online form</p>
-        <div style={{ textAlign: "center", marginTop: "40px" }}>
+        <div style={{  textAlign: "center", marginTop: "40px" }}>
       {!open && (
         <p><button onClick={() => setOpen(true)}>
           Fill Registration Form
@@ -60,7 +60,8 @@ function Home() {
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfpRTQzt42Z2P0eaEiXfk-3NRBwmwgBpPdK5bWJR9LBlXwvFw/viewform?usp=publish-editor"
           height="850"
-          style={{ border: "none", marginTop: "20px" }}
+       
+          style={{ width: "100%", border: "none", marginTop: "20px" }}
           title="Registration Form"
         />
       )}
