@@ -43,7 +43,16 @@ function About() {
         <h2>Our Motto</h2>
         <p className="motto">Wisdom from Heaven (James 3:17) </p>
       </div>
-      <p> </p>
+      <p>
+        <iframe
+  src="https://www.google.com/maps?q= miracledestinyschoolKampala,Uganda&output=embed"
+  width="100%"
+  height="400"
+  style={{ border: 0 }}
+  loading="lazy"
+/>
+
+         </p>
     </div>
   );
 }

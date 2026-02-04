@@ -1,11 +1,12 @@
 import './Home.css'
-import './Senior'
+import './Senior.css'
 
 function Senior(){
     return(
         <div className='section'>
             <div className='hulvey'>
                  <h1>Miracle Destiny High School</h1>
+                 </div>
             <p>Welcome to the Senior School section of Miracle Destiny 
                 Schools. Here, we are dedicated to providing a 
                 comprehensive and enriching educational experience
@@ -14,7 +15,7 @@ function Senior(){
                  careers, with a strong emphasis on academic excellence, 
                  critical thinking, and personal development.</p>
                 <br/>
-            </div>
+            
             
                 
                 
