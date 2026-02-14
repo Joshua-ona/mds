@@ -15,10 +15,14 @@ import destiny from "./assets/destiny.webp";
 import download from "./assets/download.jpg";
 import download1 from "./assets/download-1.jpg";
 import naume from "./assets/Naume.jpg";
+import pic1 from "./assets/anha.jpg";
+import pic2 from "./assets/blossom.jpg";
+import pic3 from "./assets/lesson.jpg";
+import pic4 from "./assets/library.jpg";
 
 const images = [
   img1, img2, img3, img4, img5, img6, 
-  exercise, child, prayer, destiny, download, download1, naume
+  exercise, child, prayer, destiny, download, download1, naume, pic1, pic2, pic3, pic4
 ];
 
 function Gallery() {
