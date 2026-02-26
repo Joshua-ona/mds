@@ -1,5 +1,5 @@
 import './Home.css'
-import { FaInstagram, FaFacebook, FaEnvelope, FaPhone, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaEnvelope,  FaTiktok } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 function Footer() {
@@ -17,60 +17,72 @@ function Footer() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={`footer ${showFooter ? "show" : ""}`}>
-      <p>© 2026 Miracle Destiny Schools</p>
+    <div className='foot' ><footer className={`footer ${showFooter ? "show" : ""}`}>
+     <div>
+       <p>© {currentYear} Miracle Destiny Schools</p>
       <p>P.O Box 35359 Kampala</p>
-       
-        <div style={{ padding: "0px", textAlign: "center", color: "orange" }}>
-          <p>Connect to us</p>
-        <div style={{ display: "flex", justifyContent: "center", gap: "20px", color:"orange"}}>
-        
+     </div>
 
-        <a
-          href="https://www.instagram.com/miracle_destiny_schools"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram size={30} color='orange' />
-        </a>
-         {/* Facebook */}
-        <a
-          href="https://www.facebook.com/Miracle_Destiny_School,_Uganda"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook size={30} color='orange'  />
-        </a>
+     <div>
+     Contact us 
+     <p>256772456789</p>
+     <p>256772456789</p>
+     <p>256772456789</p>
+     </div>
 
-        {/* Email */}
-        <a href="mailto:info@miraclecentrek.org">
-          <FaEnvelope size={30} color='orange' />
-        </a>
-          {/* Telephone */}
-        <a href="tel:+256772456789">
-          <FaPhone size={30} color='orange' />
+
     
-        </a>
-        {/* TikTok */}
-        <a
-          href="https://www.tiktok.com/Miracle_Destiny_School_Uganda"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTiktok size={30} color='orange'  />
-        </a>
+
+      <div style={{ padding: "0px", textAlign: "center", color: "orange" }}>
+        <p>Connect to us</p>
+        <div style={{ display: "flex", justifyContent: "center", gap: "20px", color: "orange" }}>
+
+
+          <a
+            href="https://www.instagram.com/miracle_destiny_schools"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram size={30} color='orange' />
+          </a>
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/Miracle_Destiny_School,_Uganda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook size={30} color='orange' />
+          </a>
+
+          {/* Email */}
+          <a href="mailto:info@miraclecentrek.org">
+            <FaEnvelope size={30} color='orange' />
+          </a>
+         
+          {/* TikTok */}
+          <a
+            href="https://www.tiktok.com/Miracle_Destiny_School_Uganda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTiktok size={30} color='orange' />
+          </a>
+            
         </div>
+        created by Joshua Ona 
 
 
-        </div>
+      </div>
 
-      
-      
 
-      
+
+
+
     </footer>
+    </div>
   );
 }
 

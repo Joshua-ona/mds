@@ -1,9 +1,29 @@
 import './Home.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
+import img1 from "./assets/images-5.jpg";
+import img2 from "./assets/download-4.jpg";
+import img3 from "./assets/images-6.jpg";
+import img4 from "./assets/images-3.jpg";
+import img5 from "./assets/images-1.jpg";
+import img6 from "./assets/images-2.jpg";
+import exercise from "./assets/exercise.jpeg";
 
+ 
 function Home() {
 
+  const images = [exercise, img1, img2, img3, img4, img5, img6];
+ useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  }, 4000);
+
+  return () => clearInterval(interval);
+}, []);
+
+const [currentIndex, setCurrentIndex] = useState(0);
   
   const [open, setOpen] = useState(false);
 
@@ -27,6 +47,15 @@ function Home() {
         <p>
          Miracle Destiny Schools is a private institution aimed at bringing up a God fearing generation with academic excellence. 
         </p>
+                <div className="slides">
+  <img
+    key={currentIndex}
+    src={images[currentIndex]}
+    alt="School"
+    className="fade-image"
+  />
+
+      </div>
       </section>
 
       {/* Academics Section */}
