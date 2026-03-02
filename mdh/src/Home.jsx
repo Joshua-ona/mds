@@ -47,6 +47,10 @@ const [currentIndex, setCurrentIndex] = useState(0);
         <p>
          Miracle Destiny Schools is a private institution aimed at bringing up a God fearing generation with academic excellence. 
         </p>
+        <br />
+        
+
+        <p>Rooted in the fear of God, our school offers a welcoming and structured environment where learners are inspired to excel academically, develop strong moral values, and discover their full potential.</p>
                 <div className="slides">
   <img
     key={currentIndex}
