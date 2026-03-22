@@ -104,7 +104,7 @@ body {
 }
 
 
-.btn-plain {
+.btn{
   background: none;
   border: none;
   padding: 0;
@@ -113,7 +113,7 @@ body {
   font: inherit;
   cursor: pointer;
 }
-.btn-plain {
+button {
   background: none;
   border: none;
   padding: 8px 12px;
@@ -124,7 +124,7 @@ body {
 }
 
 /* Hover (optional) */
-.btn-plain:hover {
+button:hover {
   color: #003366;
   opacity: 0.8;
 }
@@ -148,6 +148,7 @@ body {
     display: block;
     margin-right: -39px;
   }
+  
 
   .nav-right {
     display: none;
@@ -168,7 +169,11 @@ body {
     box-shadow: none;
     
   }
-
+.nav-right.open a {
+    padding: 0.5rem 0;
+    color: #e78727;
+    font-size: 18px;
+  }
 
   .btn-plain {
     font-size: 1rem;

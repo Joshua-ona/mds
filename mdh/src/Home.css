@@ -129,10 +129,17 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
-  padding: 15px 0;
-    opacity: 0;
+  padding: 15px 50px ;
+  opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-left: 0px;
+
+  text-align: center;
+
 }
 .footer.show {
   opacity: 1;
@@ -190,8 +197,8 @@ button{
   }
   .hero h2 {
     font-size: 32px;
-  }
-  
+  } 
+ 
 
   .hero p {
     font-size: 16px;

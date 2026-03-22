@@ -21,12 +21,13 @@ function Footer() {
 
   return (
     <div className='foot' ><footer className={`footer ${showFooter ? "show" : ""}`}>
-     <div>
+     
+      <div>
        <p>© {currentYear} Miracle Destiny Schools</p>
       <p>P.O Box 35359 Kampala</p>
      </div>
 
-     <div>
+     <div className='upper'>
      Contact us 
      <p>256772456789</p>
      <p>256772456789</p>

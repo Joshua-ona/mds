@@ -1,20 +1,16 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
-import Home from "./Home"
-import About from "./About"
-import Gallery from "./Gallery"
-import Senior from "./Senior"
-import Lower from "./Lower"
 
 import './Navbar.css'
 import logo from './logo.png'
 
 
-function Navbar(){
 
+function Navbar(){
+const [open, setOpen] = useState(false);
     
-        const [page, setPage] =useState("home")
-        const [open, setOpen] = useState(false);
+       
   return (
     
       <>
@@ -24,20 +20,15 @@ function Navbar(){
           <h1>Miracle Destiny Schools</h1>
         </div>
 
-        
-      
       
       
           
-        <div className={`nav-right  ${open ? "open" : ""}`} onClick={() => setOpen(!open)}>
-          <button className="btn-plain" onClick={() => setPage("home")}>Home</button>
-          
-          <button className="btn-plain" onClick={() => setPage("about")}>About</button>
-          <button className="btn-plain" onClick={() => setPage("gallery")}>Gallery</button>
-          
-          <button className="btn-plain" onClick={() => setPage("High")}>High School</button>
-          <button className="btn-plain" onClick={() => setPage("Primary")}>Primary School</button>
-             
+        <div className={`nav-right ${open ? "open" : ""}`}>
+         <Link to="/"><button>Home</button></Link>
+        <Link to="/about"><button>About</button></Link> 
+        <Link to="/gallery"><button>Gallery</button></Link>
+        <Link to="/senior"><button>Senior</button></Link>
+        <Link to="/lower"><button>Lower</button></Link>
 
              
         </div>
@@ -49,14 +40,7 @@ function Navbar(){
         
       
       
-       
     
-
-      {page === "home" && <Home />}
-      {page === "about" && <About />}
-      {page=== "gallery" && <Gallery />}
-      {page === "High" && <Senior />}
-      {page === "Primary" && <Lower />}
 
       
     </>
